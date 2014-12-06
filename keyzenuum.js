@@ -78,7 +78,7 @@ function specialKeyHandler(e) {
     if (e.which==8){
         e.preventDefault();
         data.keys_hit = data.keys_hit.slice(0,-1);
-        data.word_index=minus1(data.word_index);
+        data.word_index=minusXTillY(data.word_index,1,0);
         data.word_errors[data.word_index]=false;
     } 
     // Escape
