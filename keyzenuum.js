@@ -236,11 +236,13 @@ function control() {
     $("#control > #zoomPlus").click(function(e){
         data.font_size=plusXTillY(data.font_size,4,72);
         setFontSize(data.font_size);
+        save();
     });
 
     $("#control > #zoomMinus").click(function(e){
         data.font_size=minusXTillY(data.font_size,4,32);
         setFontSize(data.font_size);
+        save();
     });
 
     
